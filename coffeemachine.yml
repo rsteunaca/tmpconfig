@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: coffeemachine
+
+
+greeting:
+  name: Dakota
+  coffee: ${greeting.name} is drinking Coffee Cereza
+
+build:
+  version: "3.0"
+
+account:
+  message: "Welcome to Coffee App"
+  details:
+    name: "Bob"
+    email: "sdbcks@bksdbc.fr"
+  phone: 
+  - 0202020202
+  - 0351351683
