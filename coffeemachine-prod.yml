@@ -31,7 +31,7 @@ build:
 account:
   message: "Welcome to Coffee App Prod"
   details:
-    name: "Bob test"
+    name: "Bob prod"
     email: "{cipher}6a3242527de0003276b89ed41bdfda41fde7348023826cdb468f7d3147ce32a2"
   phone: 
   - 0202020202
