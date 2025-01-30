@@ -14,12 +14,17 @@ spring:
     hibernate:
       ddl-auto: update
 management:
+  info:
+    env:
+      enabled: true
   endpoints:
+    shutdown:
+      access: unrestricted
     web:
       exposure:
         include: '*'
-#  security:
-#    enabled: false
+  #  security:
+  #    enabled: false
   endpoint:
     health:
       show-details: always
@@ -35,18 +40,29 @@ account:
   details:
     name: "Bob prod"
     email: "{cipher}6a3242527de0003276b89ed41bdfda41fde7348023826cdb468f7d3147ce32a2"
-  phone: 
-  - 0202020202
-  - 0351351683
+  phone:
+    - 0202020202
+    - 0351351683
 
-#eureka:
-#  instance:
-#    prefer-ip-address: true
-#    instance-id: ${spring.application.name}:${random.value}
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8070/eureka/  # URL du serveur Eureka
-#    fetch-registry: true
-#    register-with-eureka: true
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${random.value}
+  client:
+    service-url:
+      defaultZone: http://localhost:8070/eureka/  # URL du serveur Eureka
+    fetch-registry: true
+    register-with-eureka: true
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: "Application CoffeeMachine"
+    version: ${build.version}
+  custom:
+    myCustomInfo: "Voici une information personnalisée"
+
+
+
 
 
