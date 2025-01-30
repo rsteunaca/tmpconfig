@@ -32,7 +32,7 @@ management:
   #  security:
   #    enabled: false
   endpoint:
-    shutdown:
+    gateway:
       access: unrestricted
     health:
       show-details: always
