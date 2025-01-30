@@ -49,10 +49,10 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
 
-  info:
-    app:
-      name: ${spring.application.name}
-      description: "Application CoffeeMachine"
-      version: ${build.version}
-    custom:
-      myCustomInfo: "Voici une information personnalisée"
+info:
+  app:
+    name: ${spring.application.name}
+    description: "Application CoffeeMachine"
+    version: ${build.version}
+  custom:
+    myCustomInfo: "Voici une information personnalisée"
