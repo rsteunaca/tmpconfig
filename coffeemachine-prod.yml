@@ -53,12 +53,6 @@ info:
   custom:
     myCustomInfo: "Voici une information personnalisée"
 
-
-
-
-
-
-
 greeting:
   name: Dakota
   coffee: ${greeting.name} is drinking Coffee Cereza
