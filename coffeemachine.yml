@@ -18,3 +18,8 @@ account:
   phone: 
   - 0202020202
   - 0351351683
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8070/eureka/  # URL du serveur Eureka
