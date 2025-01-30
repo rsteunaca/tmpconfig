@@ -32,16 +32,18 @@ management:
     env:
       enabled: true
   endpoints:
-    shutdown:
-      access: unrestricted
     web:
       exposure:
         include: '*'
   #  security:
   #    enabled: false
   endpoint:
+    shutdown:
+      access: unrestricted
     health:
       show-details: always
+
+
 
 info:
   app:
