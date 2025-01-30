@@ -1,7 +1,8 @@
 spring:
   application:
     name: coffeemachine
-
+server:
+  port: 8080
 
 greeting:
   name: Dakota
