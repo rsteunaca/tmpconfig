@@ -1,3 +1,6 @@
+server:
+  port: 8072
+
 spring:
   application:
     name: gatewaycoffee
@@ -6,10 +9,6 @@ spring:
       discovery:
         locator:
           enabled: true
-
-
-server:
-  port: 8090
 
 eureka:
   instance:
