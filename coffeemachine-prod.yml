@@ -14,6 +14,13 @@ spring:
     hibernate:
       ddl-auto: update
 management:
+  info:
+    app:
+      name: ${spring.application.name}
+      description: "Application CoffeeMachine"
+      version: ${build.version}
+    custom:
+      myCustomInfo: "Voici une information personnalisée"
   endpoints:
     web:
       exposure:
