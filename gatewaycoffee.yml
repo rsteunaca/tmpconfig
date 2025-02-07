@@ -8,6 +8,7 @@ spring:
     gateway:
       discovery:
         locator:
+#          enabled : true --> genere les routes automatiquement
           enabled: true
           lower-case-service-id: true
 
