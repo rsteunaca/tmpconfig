@@ -37,6 +37,9 @@ management:
     shutdown:
       access: unrestricted
     health:
+#      permet a docker de savoir son etat de santé
+      probes:
+        enabled: true
       show-details: always
 
 
